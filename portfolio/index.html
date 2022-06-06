@@ -12,6 +12,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script defer>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gelb: '#f1f952',
+            }
+          }
+        }
+      }
+    </script>
     <style type="text/tailwindcss">
       @import url("https://fonts.googleapis.com/css?family=Roboto");
 
@@ -22,11 +33,11 @@
   </head>
   <body class="h-full bg-black text-white">
     <div class="container mx-auto p-5">
-      <a class="my-2 text-yellow-300" href="/"
+      <a class="my-2 text-gelb" href="/"
         ><i class="fa-solid fa-house"></i> About Me</a
       >
-      <h2 class="text-center text-xl font-bold">Video Spotlight</h2>
-      <div class="space-y-5 md:flex md:justify-between md:space-x-32">
+      <h2 class="text-center text-2xl font-bold">Video Spotlight</h2>
+      <div class="space-y-5 md:flex md:justify-evenly md:space-x-32">
         <iframe
           class="h-64 w-full md:aspect-video md:h-auto md:w-6/12"
           src="https://www.youtube.com/embed/iHqNrde9FuY"
@@ -49,13 +60,13 @@
         Videos I made for
         <a
           href="https://www.youtube.com/channel/UCp-ej91goXSRy8781Xr96Yw"
-          class="text-yellow-300"
+          class="text-gelb"
           target="_blank"
           >Glowstik</a
         >
         (YouTuber)
       </h3>
-      <p class="my-2 text-yellow-300">
+      <p class="my-2 text-gelb">
         <a href="https://www.youtube.com/watch?v=PnKsCziSUIo" target="_blank"
           >HTML & CSS Tutorial Part 3</a
         ><br />
@@ -95,12 +106,12 @@
         <a
           href="https://www.youtube.com/channel/UCO_6MNj2He90Gs0ulEv6E8Q"
           target="_blank"
-          class="text-yellow-300"
+          class="text-gelb"
           >Roonie</a
         >
         (YouTuber)
       </h3>
-      <p class="my-2 text-yellow-300">
+      <p class="my-2 text-gelb">
         <a href="https://youtu.be/BXRJSEyP_2c" target="_blank"
           >Roonie: Is Nitro Worth It (editing sample)</a
         ><br />
@@ -112,7 +123,7 @@
         Videos I made for
         <a
           href="https://intercard.org/en"
-          class="text-yellow-300"
+          class="text-gelb"
           target="_blank"
           >InterCard</a
         >
@@ -122,14 +133,14 @@
         <a
           href="https://intercard.org/wp-content/uploads/2021/11/Vom-Chipkartensystem-zum-ID-System-komprimiert.mp4"
           target="_blank"
-           class="text-yellow-300"
+           class="text-gelb"
           >Vom Chipkarten-System zum ID-System</a
         >
         "From the chip card system to the ID system" (Can also be found
         <a
           href="https://intercard.org/de/loesungen/id_management"
           target="_blank"
-           class="text-yellow-300"
+           class="text-gelb"
           >here</a
         >)
       </p>

@@ -12,6 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gelb: '#f1f952',
+          }
+        }
+      }
+    }</script>
     <script src="./contact.js" defer></script>
     <style type="text/tailwindcss">
       @import url("https://fonts.googleapis.com/css?family=Roboto");
@@ -22,7 +32,7 @@
     </style>
   </head>
   <body class="h-full w-full bg-black text-white">
-    <a class="absolute top-5 left-5 my-2 text-yellow-300" href="/"
+    <a class="absolute top-5 left-5 my-2 text-gelb" href="/"
       ><i class="fa-solid fa-house"></i> About Me</a
     >
 
