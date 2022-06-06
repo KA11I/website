@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>KA11I</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -13,15 +14,16 @@
       referrerpolicy="no-referrer"
     />
     <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            gelb: '#f1f952',
-          }
-        }
-      }
-    }</script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gelb: "#f1f952",
+            },
+          },
+        },
+      };
+    </script>
     <script src="./contact.js" defer></script>
     <style type="text/tailwindcss">
       @import url("https://fonts.googleapis.com/css?family=Roboto");
@@ -38,7 +40,7 @@
 
     <div class="container mx-auto flex h-full flex-col justify-center">
       <div class="mx-auto flex flex-col">
-        <h1 id="title" class="my-2 text-4xl text-center font-bold"></h1>
+        <h1 id="title" class="my-2 text-center text-4xl font-bold"></h1>
         <form
           data-netlify="true"
           action="/contact/success"
@@ -67,7 +69,7 @@
           <input
             type="submit"
             value="SUBMIT"
-            class="bg-gelb p-4 text-white font-bold"
+            class="bg-gelb p-4 font-bold text-white"
           />
         </form>
       </div>
