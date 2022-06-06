@@ -23,6 +23,7 @@
         }
       }
     </script>
+    <script src="./index.js" defer></script>
     <style type="text/tailwindcss">
       @import url("https://fonts.googleapis.com/css?family=Roboto");
 
@@ -36,10 +37,10 @@
       <a class="my-2 text-gelb" href="/"
         ><i class="fa-solid fa-house"></i> About Me</a
       >
-      <h2 class="text-center text-2xl font-bold">Video Spotlight</h2>
-      <div class="space-y-5 md:flex md:justify-evenly md:space-x-32">
+      <h2 id="title" class="text-center text-4xl font-bold mb-2">&nbsp;</h2>
+      <div class="md:flex md:justify-around ">
         <iframe
-          class="h-64 w-full md:aspect-video md:h-auto md:w-6/12"
+          class="h-64 w-full md:aspect-video md:h-auto md:w-6/12 md:mr-1"
           src="https://www.youtube.com/embed/iHqNrde9FuY"
           title="YouTube video player"
           frameborder="0"
@@ -47,7 +48,7 @@
           allowfullscreen
         ></iframe>
         <iframe
-          class="h-64 w-full md:aspect-video md:h-auto md:w-6/12"
+          class="h-64 w-full md:aspect-video md:h-auto md:w-6/12 md:ml-1"
           src="https://www.youtube.com/embed/BXRJSEyP_2c"
           title="YouTube video player"
           frameborder="0"
