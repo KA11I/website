@@ -10,24 +10,8 @@ function typewriter() {
   }
 }
 
-let changeImageBool = true;
-
+let i = 4;
 async function changeImage() {
-  if (changeImageBool) {
-    changeImageBool = false;
-    const images = [
-      "crepe/Crepe3.png",
-      "crepe/Crepe2.png",
-      "crepe/Crepe1.png",
-      "crepe/Crepe0.png",
-    ];
-    for (let img of images) {
-      document.querySelector("#imgClickAndChange").src = img;
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-    }
-  }
+  document.querySelector("#imgClickAndChange").src = `crepe/Crepe${i-1>=0?i-1:0}.png`, i--
 }
-
 document.querySelector("#imgClickAndChange").onclick = changeImage;
-
-typewriter();
