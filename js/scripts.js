@@ -12,6 +12,7 @@ function typewriter() {
 
 let i = 4;
 async function changeImage() {
-  document.querySelector("#imgClickAndChange").src = "crepe/Crepe" + {i-1>=0?i-1:0} + ".png"
+  i = i - 1
+  document.querySelector("#imgClickAndChange").src = "crepe/Crepe" + i + ".png"
 }
 document.querySelector("#imgClickAndChange").onclick = changeImage;
