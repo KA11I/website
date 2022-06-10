@@ -10,6 +10,10 @@ function typewriter() {
     }
 }
 
-
+let c = 4;
+async function changeImage() {
+  document.querySelector("#imgClickAndChange").src = `crepe/Crepe${c-1>=0?c-1:0}.png`, c--
+}
+document.querySelector("#imgClickAndChange").onclick = changeImage;
 
 typewriter();
