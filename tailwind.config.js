@@ -3,7 +3,9 @@ module.exports = {
   theme: {
    extend: {
           colors: {
-            gelb: '#f1f952',
+            highlight: "#f1f952",
+            ground: '#121212',
+            low: '#c9c9c9',
           }
         },
   },
