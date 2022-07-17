@@ -40,11 +40,12 @@
   <div class="container mx-auto flex h-full flex-col justify-center">
     <div class="mx-auto flex flex-col">
       <h1 id="title" class="my-2 text-center text-4xl font-bold"></h1>
-      <form data-netlify="true"
+      <form data-netlify="true" data-netlify-recaptcha="true"
         class="flex h-full w-72 flex-col space-y-5 px-5 md:w-96 md:px-0">
         <input name="name" type="text" class="border bg-ground p-4" placeholder="Name" required />
         <input name="email" type="email" class="border bg-ground p-4" placeholder="Email" required />
         <textarea name="text" class="border bg-ground p-4" placeholder="Comment" required></textarea>
+        <div data-netlify-recaptcha="true"></div>
         <input type="submit" value="SUBMIT" id="send" class="bg-yellow-300 p-4 hover:bg-yellow-400 font-bold text-white"/>
       </form>
     </div>
