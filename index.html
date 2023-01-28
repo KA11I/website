@@ -17,17 +17,23 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
+module.exports = {
+  content: [],
+  theme: {
+   extend: {
+          fontFamily: {
+            'MonumentExtended-Bold':'MonumentExtended-Bold',
+            'MonumentExtended-Regular':'MonumentExtended-Regular'
+          },
           colors: {
             highlight: "#fdd02f",
             ground: '#121212',
             low: '#c9c9c9',
-          },
+          }
         },
-      },
-    };
+  },
+  plugins: [],
+}
   </script>
   <script src="./index.js" defer></script>
 </head>
