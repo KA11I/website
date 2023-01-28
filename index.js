@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Hey, I'm Karl...";
+var txt = "HEY I'M KARL";
 var speed = 100;
 
 function typewriter() {
