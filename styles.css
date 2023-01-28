@@ -1,9 +1,9 @@
  @font-face{
    font-family: 'MonumentExtended-Bold';
-   src: url('/fonts/MonumentExtended-Bold.otf') format('otf');
+   src: url('./fonts/MonumentExtended-Bold.otf') format('otf');
  }
 
  @font-face{
    font-family: 'MonumentExtended-Regular';
-   src: url('/fonts/MonumentExtended-Regular.otf') format('otf');
+   src: url('./fonts/MonumentExtended-Regular.otf') format('otf');
  }
