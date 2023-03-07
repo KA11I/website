@@ -100,16 +100,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="container mx-auto flex h-screen flex-col justify-center items-center" id="contact">
-			<div class="mx-auto flex flex-col gap-5 justify-center">
-				<h1 class="my-2 text-center text-4xl font-MonumentExtended-Bold">DON'T BE SHY :)</h1>
-				<form data-netlify="true" class="flex h-full w-72 flex-col space-y-5 px-5 md:w-96 md:px-0 items-center ">
-					<input name="name" type="text" class="border bg-ground p-4 font-MonumentExtended-Regular" placeholder="Name" required />
-					<input name="email" type="email" class="border bg-ground p-4 font-MonumentExtended-Regular" placeholder="Email" required />
-					<textarea name="text" class="border bg-ground p-4 font-MonumentExtended-Regular" placeholder="Message" required></textarea>
-					<input type="submit" value="SUBMIT" id="send" class="bg-amber-400 p-4 hover:bg-amber-500 font-MonumentExtended-Bold text-xl text-ground" />
-				</form>
-			</div>
-		</div>
+<div class="container mx-auto flex h-screen flex-col justify-center items-center gap-5">
+  <h1 class="font-MonumentExtended-Bold my-2 text-center text-4xl">DON'T BE SHY :)</h1>
+  <form class="w-72 max-w-full space-y-5 px-5 md:w-96 md:px-0" method="post">
+    <input type="hidden" name="form-name" value="form 1" hidden />
+    <input name="name" type="text" class="bg-ground font-MonumentExtended-Regular border p-4 w-full" placeholder="Name" required="" />
+    <input name="email" type="email" class="bg-ground font-MonumentExtended-Regular border p-4 w-full" placeholder="Email" required="" />
+    <textarea name="text" class="bg-ground font-MonumentExtended-Regular border p-4 w-full" placeholder="Message" required=""></textarea>
+    <input type="submit" value="SUBMIT" id="send" class="font-MonumentExtended-Bold text-ground bg-amber-400 p-4 text-xl hover:bg-amber-500 w-full" />
+  </form>
+</div>
 	</body>
 </html>
