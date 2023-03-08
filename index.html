@@ -103,7 +103,12 @@
         </div>
         <div class="container mx-auto flex h-screen flex-col justify-center items-center gap-5" id="contact">
             <h1 class="font-MonumentExtended-Bold my-2 text-center text-4xl">SAY HELLO ^^</h1>
-            <form class="w-72 max-w-full space-y-5 px-5 md:w-96 md:px-0" method="post">
+            <form class="w-72 max-w-full space-y-5 px-5 md:w-96 md:px-0" method="post" netlify-honeypot="bot-field">
+                  <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
                 <input type="hidden" name="form-name" value="form 1" hidden />
                 <input name="name" type="text" class="bg-ground font-MonumentExtended-Regular border p-4 w-full" placeholder="Name" required="" />
                 <input name="email" type="email" class="bg-ground font-MonumentExtended-Regular border p-4 w-full" placeholder="Email" required="" />
