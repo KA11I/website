@@ -16,13 +16,12 @@ async function changeImage() {
 }
 document.querySelector("#imgClickAndChange").onclick = changeImage;
 
+
 var nightpic = document.getElementById("nightpic");
 
 nightpic.addEventListener("click", function() {
   nightpic.src = "karl night burn.gif";
-  setTimeout(function() {
-    nightpic.src = "karl night.jpg";
-  }, 3000);
 });
+
 
 typewriter();
