@@ -6,12 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KURLI</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #000; /* Schwarzer Hintergrund */
+            color: #fff; /* Weiße Schrift */
+            height: 100vh;
+            overflow: hidden; /* Verhindert horizontales Scrollen */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .marquee-horizontal2 {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            white-space: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .track-horizontal2 {
+            display: flex;
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee-horizontal 20s linear infinite;
+        }
+
+        .marquee-text {
+            padding-right: 0.3em;
+            padding-left: 0.3em;
+            font-family: 'Helvetica', sans-serif;
+            color: wheat;
+            font-size: 6.25em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        @keyframes marquee-horizontal {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .video-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    </style>
 </head>
 
-<body class="bg-black h-screen flex justify-center items-center">
-    <div>
-        <img src="kurli.png" alt="Bild" class="mx-auto" />
+<body>
+
+    <div class="marquee-horizontal2">
+        <div class="track-horizontal2">
+            <div class="marquee-text">WORK IN PROGRESS</div>
+            <div class="marquee-text">WORK IN PROGRESS</div>
+            <div class="marquee-text">WORK IN PROGRESS</div>
+            <div class="marquee-text">WORK IN PROGRESS</div>
+            <div class="marquee-text">WORK IN PROGRESS</div>
+            <div class="marquee-text">WORK IN PROGRESS</div>
+        </div>
     </div>
+
+    <div class="video-container">
+        <div class="flex flex-col lg:flex-row justify-center items-center lg:space-x-8 w-full max-w-6xl px-4 mx-auto">
+            <iframe class="w-full lg:w-1/2 h-64 md:h-80 lg:h-96" src="https://www.youtube.com/embed/wMNK57M-0ik?si=ExWmjVEORcec2uXW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="w-full lg:w-1/2 h-64 md:h-80 lg:h-96 mt-4 lg:mt-0" src="https://www.youtube.com/embed/OdzjOU-IGmw?si=Pi_ELbg6u1yhZqvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
 </body>
 
 </html>
